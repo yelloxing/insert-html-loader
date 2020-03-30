@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/yelloxing/insert-html-loader/issues"
   },
-  "homepage": "https://github.com/yelloxing/insert-html-loader#readme"
+  "homepage": "https://github.com/yelloxing/insert-html-loader#readme",
+  "dependencies": {
+    "loader-utils": "^2.0.0"
+  }
 }

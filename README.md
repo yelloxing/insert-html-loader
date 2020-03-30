@@ -6,6 +6,23 @@
 ### 邮箱:yelloxing@gmail.com
 ****
 
+如何调试？
+--------------------------------------
+
+首先进入test测试项目，运行：
+
+```bash
+npm run debug
+```
+
+在需要调试的地方提前添加“ debugger ”语句，这和普通的web端调试一样，接着，在chrome浏览器地址栏中输入：
+
+```
+chrome://inspect/#devices
+```
+
+接着，请点击“ Open dedicated DevTools for Node ”后进入调试界面。
+
 如何使用？
 --------------------------------------
 

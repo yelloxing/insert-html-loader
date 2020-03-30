@@ -37,7 +37,7 @@ module.exports = function (source) {
       // 插入代码
       let url = temp[1].replace("<" + hook + ">", "").replace("</" + hook + ">", "");
 
-      let full_url = context + "/" + url;
+      let full_url=path.join(context,url);
 
       let innsetCode = fs.readFileSync(full_url);
 
