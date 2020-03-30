@@ -1,0 +1,24 @@
+{
+  "name": "insert-html-loader",
+  "version": "0.1.2",
+  "description": "在xhtml文件的指定处插入代码。",
+  "main": "./insert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelloxing/insert-html-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "insert",
+    "html"
+  ],
+  "author": "心叶",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yelloxing/insert-html-loader/issues"
+  },
+  "homepage": "https://github.com/yelloxing/insert-html-loader#readme"
+}
