@@ -1,10 +1,10 @@
 # insert-html-loader
 在xhtml文件的指定处插入代码。
 
-****
-### 作者:心叶
-### 邮箱:yelloxing@gmail.com
-****
+[![downloads](https://img.shields.io/npm/dm/insert-html-loader.svg)](https://yelloxing.github.io/npm-downloads?interval=7&packages=insert-html-loader)
+[![install size](https://packagephobia.now.sh/badge?p=insert-html-loader)](https://packagephobia.now.sh/result?p=insert-html-loader)
+[![Version](https://img.shields.io/npm/v/insert-html-loader.svg)](https://www.npmjs.com/package/insert-html-loader)
+[![License](https://img.shields.io/npm/l/insert-html-loader.svg)](https://github.com/yelloxing/insert-html-loader/blob/master/LICENSE)
 
 如何调试？
 --------------------------------------
@@ -43,12 +43,15 @@ npm install --save-dev insert-html-loader
 ```
 
 在需要插入html-template的地方定义插槽，可以有任意多个
- 
+
  ```html
  <insert-html>./XXX.html</insert-html>
  ```
 
-### 免责声明
-------
-*   项目中部分数据（如图片等）来自互联网，如果侵犯到对应权益者请联系我们，方便我们及时删除！
-*   本项目保留贡献者全部权利，发生的任何纠纷，本项目作者和维护人概不负责，如有侵权，请及时和我们取得联系。
+当然，后缀不一定需要是.html，理论上，任意的后缀都可以，并且在非生产模式下是热更新的。
+
+## 开源协议
+
+[MIT](https://github.com/yelloxing/insert-html-loader/blob/master/LICENSE)
+
+Copyright (c) 2019-2020 走一步 再走一步

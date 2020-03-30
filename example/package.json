@@ -7,7 +7,7 @@
     "start": "npm install && npm run dev",
     "dev": "node_modules/.bin/webpack-dev-server --config webpack.dev.js",
     "prod": "node_modules/.bin/webpack --config webpack.prod.js",
-    "debug":"node --inspect-brk ./node_modules/webpack/bin/webpack.js --config webpack.prod.js"
+    "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js --config webpack.prod.js"
   },
   "keywords": [
     "vue",
