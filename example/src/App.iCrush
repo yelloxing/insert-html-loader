@@ -1,0 +1,31 @@
+<template>
+    <div>
+        <h2>{{title}}</h2>
+        <ul>
+            <li>
+                <insert-html>./pages/1.iCrush</insert-html>
+            </li>
+            <li>
+                <insert-html>./pages/2.iCrush</insert-html>
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                title: "insert-html-loader测试"
+            };
+        }
+    };
+
+</script>
+
+<style>
+    h2 {
+        color: red;
+    }
+
+</style>

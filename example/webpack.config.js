@@ -1,4 +1,4 @@
-const VueLoaderPlugin = require('vue-loader').VueLoaderPlugin;
+const icrushLoaderPlugin = require('icrush/webpack/icrush-loader-plug');
 const resolve = require('path').resolve;
 
 module.exports = {
@@ -8,19 +8,13 @@ module.exports = {
         filename: 'build/main.js',
         chunkFilename: 'build/bundle.[name].[chunkhash].js'
     },
-    resolve: {
-        alias: {
-            'vue': 'vue/dist/vue.js',
-            '@': resolve(__dirname, 'src')
-        }
-    },
     optimization: {
         concatenateModules: true
     },
     module: {
         rules: [{
-            test: /\.vue$/,
-            use: ['vue-loader', {
+            test: /\.iCrush$/,
+            loader: ['icrush/webpack/icrush-loader.js', {
                 loader: resolve(__dirname, '../insert.js'),
                 options: {
                     // 调用插入钩子标签名称
@@ -37,10 +31,10 @@ module.exports = {
             loader: "babel-loader?cacheDirectory=.babel-cache"
         }, {
             test: /\.(css|scss)$/,
-            use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+            loader: ['style-loader', 'icrush/webpack/icrush-style-loader.js', 'css-loader', 'postcss-loader', 'sass-loader']
         }, {
             test: /\.(png|jpg|jpeg|gif)$/,
-            use: [{
+            loader: [{
                 loader: "url-loader",
                 options: {
                     publicPath: "../",
@@ -52,6 +46,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new icrushLoaderPlugin()
     ]
 };

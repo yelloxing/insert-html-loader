@@ -1,23 +1,18 @@
-import Vue from 'vue';
-
-// 引入启动界面
-import App from './App.vue';
-
-// 引入路由文件
-import router from './route';
+import iCrush from 'iCrush';
 
 // 引入基础样式
 import '@yelloxing/normalize.css';
 
-//根对象
-window.vm = new Vue({
+// 引入主页面
+import App from './App.iCrush';
+
+// 根对象
+window.icrush = new iCrush({
 
     //挂载点
     el: document.getElementById('root'),
 
-    // 启用路由
-    router,
-
-    // 启动vue
+    // 配置启动方法
     render: createElement => createElement(App)
+
 });
