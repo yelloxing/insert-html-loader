@@ -1,6 +1,6 @@
 {
   "name": "insert-html-loader",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "在xhtml文件的指定处插入代码。",
   "main": "./insert.js",
   "scripts": {
