@@ -30,8 +30,8 @@ module.exports = {
             // 把Babel编译过的文件缓存起来
             loader: "babel-loader?cacheDirectory=.babel-cache"
         }, {
-            test: /\.(css|scss)$/,
-            loader: ['style-loader', 'icrush/webpack/icrush-style-loader.js', 'css-loader', 'postcss-loader', 'sass-loader']
+            test: /\.css$/,
+            loader: ['style-loader', 'icrush/webpack/icrush-style-loader.js', 'css-loader']
         }, {
             test: /\.(png|jpg|jpeg|gif)$/,
             loader: [{

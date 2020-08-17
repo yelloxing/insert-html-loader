@@ -12,8 +12,8 @@
  *       hook: "insert-html"
  *    }
  *
- * 在需要插入vue-template的地方定义插槽，可以有任意多个
- * <insert-html>./XXX.vue</insert-html>
+ * 在需要插入html-template的地方定义插槽，可以有任意多个
+ * <insert-html>./XXX.html</insert-html>
  */
 
 const path = require('path');

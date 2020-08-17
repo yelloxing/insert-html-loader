@@ -1,6 +1,6 @@
 {
   "name": "insert-html-loader",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "在xhtml文件的指定处插入代码。",
   "main": "./insert.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/yelloxing/insert-html-loader#readme",
   "dependencies": {
-    "loader-utils": "^2.0.0"
+    "loader-utils": "^2.0.0",
+    "xhtml-engine": "^2.0.1"
   }
 }
